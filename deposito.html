@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="Logo.jpg" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deposito</title>
+  <style>
+    body {
+      background: linear-gradient(to right, rgb(49, 49, 49), rgb(71, 71, 71));
+      padding: 15px;
+      padding-right: 40px;
+      font-family: arial, sans-serif;
+    }
+
+    .card {
+      padding: 15px;
+      background-color: rgb(235, 235, 235);
+      border-radius: 10px;
+      margin: auto;
+      width: 400px;
+      height: 430px;
+    }
+
+    .centro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      text-align: center;
+    }
+    
+
+    label {
+      font-weight: bold;
+      font-size: 120%;
+      display: block;
+    }
+
+    input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card">
+
+      <label for="valor">Valor:</label>
+      <input type="tel" id="valor" name="valor" value="R$">
+
+    <div class="centro">
+    <h1>Deposite Aqui:</h1>
+    <img src="qrcode.png" alt="qrcode" style="width: 300px;">
+    </div>
+
+  </div>
+  
+</body>
+</html>
