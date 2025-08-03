@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="Logo.jpg" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
@@ -9,10 +10,113 @@
     body {
       display: flex;
       justify-content: center;
+      background: linear-gradient(to right, rgb(49, 49, 49), rgb(71, 71, 71));
     }
+
+    .logo {
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: linear-gradient(to right, rgb(40, 40, 40), rgb(62, 62, 62));
+      border-radius: 15px;
+    }
+    
+    .logo img {
+      width: 10%;
+      height: 75%;
+      border-radius: 5px;
+    }
+
+    .logo h1 {
+      font-weight: bold;
+      font-size: medium;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .logo a {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+      padding-left: 35%;
+    }
+
+    .logo a:hover {
+      color: rgb(152, 0, 0);
+    }
+
+    .dolado {
+      position: absolute;
+      margin-top: 80px;
+      display: flex;
+      align-items: center;
+      gap: 15px ;
+    }
+    
+    .card {
+      padding: 5px;
+      background-color: rgb(44, 95, 41);
+      border-radius: 15px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+      text-align: center;
+      width: 110px;
+      height: auto;
+    }
+
+    .card:hover {
+      background-color: rgb(17, 62, 17);
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(3, 255, 16);
+    }
+
+    .saque {
+      width: 60%;
+      height: auto;
+      margin-top: 5px;
+
+    }
+
+    .deposito {
+      width: 50%;
+      height: auto;
+      margin-top: 10px;
+      margin-bottom: -10px;
+    }
+    .card h1 {
+      font-size: larger;
+    }
+
   </style>
 </head>
 <body>
-  <h1>Em Desenvolvimento</h1>
+  <div class="logo">
+    <img src="Logo.jpg" alt="logo">
+    <h1>AspindolaBET777</h1>
+    <a href="sair2.html">Sair</a>
+  </div>
+
+  
+  <div class="dolado">
+
+      <a href="saque2.html">
+        <div class="card">
+          <img src="saque.png" alt="saque" class="saque">
+          <h1>Saque</h1>
+        </div>
+      </a>
+
+      <a href="deposito2.html">
+        <div class="card">
+          <img src="deposito.png" alt="deposito" class="deposito">
+          <h1>Deposito</h1>
+        </div>
+      </a>
+
+  </div>
+
+  
 </body>
 </html>
