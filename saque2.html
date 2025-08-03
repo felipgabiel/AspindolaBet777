@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="Logo.jpg" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saque</title>
+
+  <style>
+    body {
+      background: linear-gradient(to right, rgb(49, 49, 49), rgb(71, 71, 71));
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: azure;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      border-radius: 10px;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    .card h1 {
+      text-align: center;
+    }
+
+
+
+   label {
+    display: block;
+    margin-top: 15px;
+   }
+
+   input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+   }
+
+   input[type="submit"] {
+    font-weight: bold;
+    margin-top: 10px;
+   }
+
+   input[type="submit"]:hover {
+    background-color: rgb(0, 184, 0);
+   }
+    
+   a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    top: 4%;
+    right: 15%;
+   }
+
+   a:hover {
+    color: rgb(149, 0, 0);
+   }
+
+  </style>
+
+  <script>
+    function mostrarAlerta() {
+      alert("Saldo Insuficiente");
+    }
+  </script>
+
+</head>
+<body>
+  <div class="card">
+    <h1>Saque</h1>
+    
+    <a href="celular.html">Voltar</a>
+    
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+
+    <label for="cpf">CPF:</label>
+    <input type="tel" id="cpf" name="cpf">
+
+    <label for="valor">Valor:</label>
+    <input type="text" id="valor" name="valor" value="R$ ">
+
+    <input type="submit" value="Solicitar" onclick="mostrarAlerta()">
+
+  </div>
+</body>
+</html>
