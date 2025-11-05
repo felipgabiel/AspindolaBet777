@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="Logo.jpg" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deposito</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+    .logoIM {
+      width: 50px;
+      height: 45px;
+      border-radius: 10px;
+    }
+
+    .logoT {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #F8B068;
+    }
+
+    .fundo {
+      background-color: #570233;
+      width: 100%;
+      border-radius: 15px;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      /* <-- permite quebrar linha sem bagunçar */
+      gap: 1rem;
+      box-sizing: border-box;
+    }
+
+    .sair {
+      color: #BD3038;
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-decoration: none;
+      transition: color 0.5s;
+    }
+
+    .sair:hover {
+      color: rgb(175, 0, 0);
+    }
+
+    .titulo {
+      color: #BD3038;
+      font-size: 1.6rem;
+      transition: color 0.6s;
+      margin-left: -9rem;
+    }
+
+    .titulo:hover {
+      color: #ffffff;
+    }
+
+
+    body {
+      background: #220114;
+      padding: 15px;
+      padding-right: 40px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .card {
+      padding: 15px;
+      background-color: #570233;
+      border-radius: 10px;
+      margin: auto;
+      max-width: 400px;
+      margin-top: 15px;
+      color: white;
+    }
+
+    .centro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 120%;
+      display: block;
+    }
+
+    input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 5px;
+    }
+
+    .voltar-container {
+      text-align: right;
+      margin-bottom: 10px;
+      position: relative;
+      left: -4rem;
+      top: 0.7rem;
+    }
+
+    .voltar {
+      text-decoration: none;
+      color: #BD3038;
+      font-weight: bold;
+      font-size: large;
+      transition: color 0.7s;
+      position: absolute;
+    }
+
+    .voltar:hover {
+      color: rgb(175, 0, 0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="fundo">
+
+    <div class="logo">
+      <img src="Logo.jpg" alt="logo" class="logoIM">
+      <p class="logoT">AspindolaBET777</p>
+    </div>
+
+    <h1 class="titulo">Aposte Com Responsabilidade</h1>
+
+    <a href="sairpc.html" class="sair">Sair</a>
+  </div>
+  <div class="card">
+    <div class="voltar-container">
+      <a href="pc.html" class="voltar">Voltar</a>
+    </div>
+
+    <label for="valor">Valor:</label>
+    <input type="tel" id="valor" name="valor" placeholder="Digite o Valor">
+    <br>
+    <div class="centro">
+      <h1 style="margin-top: 5px;">Deposite Aqui:</h1>
+
+      <img src="qrcode.png" alt="qrcode" style="width: 300px;">
+    </div>
+
+  </div>
+
+</body>
+
+</html>
