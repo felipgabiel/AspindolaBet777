@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+    .logoIM {
+      width: 50px;
+      height: 45px;
+      border-radius: 10px;
+    }
+
+    .logoT {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #F8B068;
+    }
+
+    .fundo {
+      background-color: #570233;
+      width: 100%;
+      border-radius: 15px;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      /* <-- permite quebrar linha sem bagunçar */
+      gap: 1rem;
+      box-sizing: border-box;
+    }
+
+    .sair {
+      color: #BD3038;
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-decoration: none;
+      transition: color 0.5s;
+    }
+
+    .sair:hover {
+      color: rgb(175, 0, 0);
+    }
+
+    .titulo {
+      color: #BD3038;
+      font-size: 1.6rem;
+      transition: color 0.6s;
+      margin-left: -9rem;
+    }
+
+    .titulo:hover {
+      color: #ffffff;
+    }
+
+    body {
+      background-color: #220114;
+      font-family: 'Poppins', 'sans-serif';
+    }
+
+    .card {
+      background-color: #570233;
+      padding: 15px;
+      border-radius: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: end;
+      margin: auto;
+      max-width: 500px;
+      margin-top: 2rem;
+    }
+
+    input {
+      padding: 7px;
+      width: 100%;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      border: 1px solid white;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: large;
+      color: white;
+    }
+
+    input[type="submit"] {
+      background-color: #F8B068;
+      border: 0px;
+      color: black;
+      font-weight: bolder;
+      font-size: large;
+      transition: background-color 1.5s, color 1s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #fc8107;
+      color: rgb(255, 255, 255);
+    }
+
+    .voltar {
+      text-decoration: none;
+      color: #BD3038;
+      font-weight: bold;
+      font-size: large;
+      position: absolute;
+      transition: color 0.7s;
+    }
+
+    .voltar:hover {
+      color: rgb(175,0,0);
+    }
+  </style>
+
+  <script>
+    function erro() {
+      alert("Erro ao Criar a Conta")
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="fundo">
+
+    <div class="logo">
+      <img src="Logo.jpg" alt="logo" class="logoIM">
+      <p class="logoT">AspindolaBET777</p>
+    </div>
+
+    <h1 class="titulo">Aposte Com Responsabilidade</h1>
+
+    <a href="sairpc.html" class="sair">Sair</a>
+  </div>
+
+  <div class="card">
+    <a href="pc.html" class="voltar">Voltar</a>
+    <form method="post">
+
+      <label for="name">Nome:</label>
+      <input type="text" name="Nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" name="senha" required>
+
+      <input type="submit" onclick="erro()" value="Criar Conta">
+
+    </form>
+  </div>
+</body>
+
+</html>
