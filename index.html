@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <link rel="icon" href="logo.png" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ínicio</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
   <style>
     body {
-      background: linear-gradient(to right, rgb(49, 49, 49), rgb(71, 71, 71));
+      background: #220114;
       padding: 15px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: 'Poppins', 'sans-serif';
+      display: column;
+      justify-items: center;
     }
 
     .container {
-      width: 200px;
+      width: 230px;
       margin: auto;
-      background-color: rgb(61, 61, 61);
-      border-radius: 5px;
+      border-radius: 15px;
+      transition: color 0.7s, background-color 0.7s;
     }
+
     a h1 {
       text-align: center;
     }
+
     img {
       position: relative;
       left: 12%;
@@ -31,45 +43,59 @@
 
     a {
       text-decoration: none;
-      color: rgb(3, 213, 250);
+      color: #FF7E57;
     }
 
     .dolado {
       display: flex;
+      padding-top: 5px;
+      background-color: #570233;
       justify-content: center;
-      gap: 40px; /* espaçamento entre os dois blocos */
-      flex-wrap: wrap; /* faz quebrar para o lado de baixo se a tela for pequena */
+      width: 45%;
+      position: absolute;
+      border-radius: 50px;
+      gap: 40px;
+      /* espaçamento entre os dois blocos */
+      flex-wrap: wrap;
+      /* faz quebrar para o lado de baixo se a tela for pequena */
     }
 
     h2 {
       text-align: center;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 220%;
+      transition: font-size 0.9s;
+    }
+
+    h2:hover {
+      font-size: 250%;
     }
 
     .container:hover {
-      color: rgb(0, 130, 153);
+      background-color: #220114;
+      color: #BD3038;
     }
-
   </style>
 </head>
-<body>
-  <h2>Bem-Vindo á AspindolaBET777</h2>
-  <div class="dolado">
-  <a href="celular.html">
-    <div class="container">
-    <img src="celular.png" alt="celular" width="150px">
-    <h1>Celular</h1>
-  </div>
-  </a>
 
-  <a href="computador.html">
-    <div class="container">
-      <img src="pc.png" alt="pc" width="165px" style="margin-top: 31px;">
-      <h1 >Computador</h1>
-    </div>
-  </a>
+<body>
+  <h2 style="color: #F8B068;">Selecione Seu Dispostivo</h2>
+  <div class="dolado">
+    <a href="celular.html">
+      <div class="container">
+        <img src="celular.webp" alt="celular" width="150px" style="margin-left: 6%;">
+        <h1 style="margin-top: 16%">Celular</h1>
+      </div>
+    </a>
+
+    <a href="pc.html">
+      <div class="container">
+        <img src="pc.webp" alt="pc" width="165px" style="margin-left: 4%;">
+        <h1>Computador</h1>
+      </div>
+    </a>
   </div>
-  
+
 </body>
+
 </html>
